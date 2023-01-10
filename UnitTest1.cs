@@ -16,7 +16,7 @@ namespace GoogleUITest
             By googleSearchBar = By.Name("q");
             By googleSearchButton = By.Name("btnK");
             By googleResultText = By.XPath(".//div[@data-attrid='title']");
-            By googleIAgreeButton = By.Id("L2AGLb");
+            //By googleIAgreeButton = By.Id("L2AGLb");
 
             IWebDriver webDriver = new ChromeDriver();
             Thread.Sleep(waitingTime);
@@ -25,7 +25,7 @@ namespace GoogleUITest
             webDriver.Navigate().GoToUrl("https://www.google.com/");
             Thread.Sleep(waitingTime);
 
-            webDriver.FindElement(googleIAgreeButton).Click();
+            //webDriver.FindElement(googleIAgreeButton).Click();
             webDriver.Manage().Window.Maximize();
             Thread.Sleep(waitingTime);
 
